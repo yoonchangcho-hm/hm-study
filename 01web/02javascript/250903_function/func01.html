@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- document.getElementById('add').innerHTML -->
+
+        <div>총합계 <span id="add"></span>점 입니다.</div>
+        <script>
+            function name(user, year) {
+                console.log('함수실행1' + user + ', 나이는 ' + year + '살 입니다.');
+                document.write('함수실행2');
+            }
+            name('홍길동', 20);
+
+            function addNum(a, b, c, name) {
+                var sum = (a + b) * c;
+                var str = name;
+                return sum;
+            }
+
+            // console.log(addNum(10, 20));
+
+            var total = addNum(30, 50, 4, '홍길동');
+            console.log(total);
+
+            document.getElementById('add').innerHTML = total;
+        </script>
+    </body>
+</html>

@@ -27,7 +27,7 @@
         </style>
     </head>
     <body>
-        <div class="contWrap">
+        <div class="contWrap" id="container">
             <!-- <div class='card'>
                 <img src='img/img (1).png' />
                 <div class='card-body'>
@@ -71,12 +71,38 @@
                         stitle: '아동청소년대상',
                     },
                 ];
-                var sum = 0;
-                for (var i = 1; i < 101; i++) {
-                    // sum = sum + i;
-                    sum += i;
+                // var sum = 0;
+                // for (var i = 1; i < 11; i++) {
+                //     // sum = sum + i;
+                //     // sum += i;
+                //     // var sum = 0;
+                //     sum = sum + i;
+                //     consol.log(sum);
+                // }
+                // document.write('total : ' + sum); //55
+
+                // var str = '';
+                // for (var i = 0; i < 10; i++) {
+                //     str = str + i;
+                //     // "0" = "" +0;
+                //     // "01" = "0" +  1
+                // }
+                // document.write(str);
+
+                var htmlstring = '';
+                for (var i = 0; i < vData.length; i++) {
+                    htmlstring += "<div class='card'>";
+                    htmlstring += "<img src='img/" + vData[i].imgUrl + "' />";
+                    htmlstring += "<div class='card-body'>";
+                    htmlstring += '<h3>' + vDate[i].title + '</h3>';
+                    htmlstring += '</div>';
+                    htmlstring += '</div>';
                 }
-                document.write(sum); //55
+                // document.write(htmlstring);
+
+                // #container 선택해서 htmlstring을 insert해야함
+
+                document.getElementById('container').innerHTML = htmlstring;
             </script>
         </div>
     </body>
