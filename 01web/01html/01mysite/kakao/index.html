@@ -64,10 +64,13 @@
             /* contcard */
 
             .card {
-                width: 390px;
+                width: 370px;
+                transition: 0.3s;
+                cursor: pointer;
             }
             .card img {
                 width: 100%;
+                transition: 0.3s;
             }
             .card .card-body {
                 padding: 16px;
@@ -77,7 +80,16 @@
                 display: flex;
                 justify-content: space-between;
                 margin: auto;
+                padding-bottom: 100px;
                 flex-wrap: wrap;
+            }
+            .container h2 {
+                text-align: center;
+                padding: 100px;
+            }
+            .card:hover img {
+                transform: translateY(-10px);
+                box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.3);
             }
         </style>
     </head>
@@ -111,34 +123,57 @@
         </div>
 
         <!-- content -->
-        <div class="cardWrap">
-            <!-- <div class="card">
-                <img src="img/img (1).png" alt="" />
-                <div class="card-body">
-                    <h3>Lorem, ipsum dolor.</h3>
-                </div>
-            </div> -->
 
-            <script>
-                var vData = [
-                    { imgUrl: 'img (1).png', title: '찾아가는 학교교육1', stitle: '아동청소년대상' },
-                    { imgUrl: 'img (2).png', title: '찾아가는 학교교육2', stitle: '아동청소년대상' },
-                    { imgUrl: 'img (3).png', title: '찾아가는 학교교육3', stitle: '아동청소년대상' },
-                    { imgUrl: 'img (1).png', title: '찾아가는 학교교육1', stitle: '아동청소년대상' },
-                    { imgUrl: 'img (2).png', title: '찾아가는 학교교육2', stitle: '아동청소년대상' },
-                    { imgUrl: 'img (3).png', title: '찾아가는 학교교육3', stitle: '아동청소년대상' },
-                ];
+        <div class="container">
+            <h2>Lorem ipsum dolor sit.</h2>
 
-                for (var i = 0; i < vData.length; i++) {
-                    document.write("<div class='card'>");
-                    document.write("<img src='img/" + vData[i].imgUrl + "' />");
-                    document.write("<div class='card-body'>");
-                    document.write('<h3>' + vData[i].title + '</h3>');
-                    document.write('<p>' + vData[i].stitle + '</p>');
-                    document.write('</div>');
-                    document.write('</div>');
-                }
-            </script>
+            <div class="cardWrap">
+                <!-- <div class="card">
+                    <img src="img/img (1).png" alt="" />
+                    <div class="card-body">
+                        <h3>Lorem, ipsum dolor.</h3>
+                    </div>
+                </div> -->
+
+                <script>
+                    var vData = [
+                        { imgUrl: 'img (1).png', title: '찾아가는 학교교육1', stitle: '아동청소년대상' },
+                        { imgUrl: 'img (2).png', title: '찾아가는 학교교육2', stitle: '아동청소년대상' },
+                        { imgUrl: 'img (3).png', title: '찾아가는 학교교육3', stitle: '아동청소년대상' },
+                        { imgUrl: 'img (1).png', title: '찾아가는 학교교육1', stitle: '아동청소년대상' },
+                        { imgUrl: 'img (2).png', title: '찾아가는 학교교육2', stitle: '아동청소년대상' },
+                        { imgUrl: 'img (3).png', title: '찾아가는 학교교육3', stitle: '아동청소년대상' },
+                    ];
+
+                    for (var i = 0; i < vData.length; i++) {
+                        document.write("<div class='card'>");
+                        document.write("<img src='img/" + vData[i].imgUrl + "' />");
+                        document.write("<div class='card-body'>");
+                        document.write('<h3>' + vData[i].title + '</h3>');
+                        document.write('<p>' + vData[i].stitle + '</p>');
+                        document.write('</div>');
+                        document.write('</div>');
+                    }
+                </script>
+            </div>
         </div>
+        <style>
+            .box {
+                width: 100px;
+                margin: 0 auto;
+                text-align: center;
+                padding: 10px;
+                cursor: pointer;
+                transition: 0.3s;
+                position: relative;
+            }
+            .box:hover {
+                width: 110px;
+                background: blue;
+                color: white;
+                left: 10px;
+            }
+        </style>
+        <div class="box">들어가기</div>
     </body>
 </html>
