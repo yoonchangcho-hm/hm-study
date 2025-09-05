@@ -43,4 +43,30 @@
   height: 300px;
 }
 
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contWrap02 {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.contWrap03 .txtbox {
+  width: 1114px;
+  height: 338px;
+  background-color: #ffcd2c;
+  padding: 102px 520px 102px 104px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: -1px;
+}
+
+.contWrap03 img {
+  position: relative;
+  top: -150px;
+  right: -520px;
+}
+
 /* footer */
