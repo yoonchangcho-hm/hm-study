@@ -52,6 +52,20 @@ ul {
   margin-top: 100px;
   margin-bottom: 150px;
 }
+.contWrap02 .card .ctb {
+  padding: 20px 16px 0;
+}
+.card:hover img {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.3);
+}
+.card img {
+  width: 100%;
+  transition: 0.3s;
+}
+.card .card-body {
+  padding: 16px;
+}
 
 .contWrap03 .txtbox {
   width: 1114px;
