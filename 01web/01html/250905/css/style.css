@@ -39,15 +39,22 @@
 
 /* content */
 
-.cont01 {
-  height: 300px;
+.h3Wrap {
+}
+.h3Wrap h3 {
+  padding: 150px 0 0 0;
+  text-align: left;
 }
 
 ul {
   display: flex;
   justify-content: space-between;
 }
-
+.contWrap01 {
+  /* width: 500px; */
+  /* flex-direction: column;
+  justify-content: space-between; */
+}
 .contWrap02 {
   margin-top: 100px;
   margin-bottom: 150px;
@@ -73,7 +80,6 @@ ul {
   background-color: #ffcd2c;
   padding: 102px 520px 102px 104px;
   font-weight: 500;
-  line-height: 1.43;
   letter-spacing: -1px;
 }
 
