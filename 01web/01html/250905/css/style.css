@@ -27,6 +27,7 @@
 .visual {
   /* background-color: pink; */
   height: 100vh;
+  min-height: 700px;
   background-image: url(../img/img01_01.jpg);
   background-repeat: no-repeat;
   background-position: center;
