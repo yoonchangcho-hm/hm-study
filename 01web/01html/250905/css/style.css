@@ -4,6 +4,7 @@
   background: white;
   position: fixed;
   width: 100%;
+  padding-left: 50px;
 }
 .header .wrap {
   /* background: skyblue; */
@@ -17,6 +18,8 @@
   width: 165px;
 }
 
+.header .menuWrap {
+}
 .header .menuWrap ul {
   display: flex;
   gap: 100px;
@@ -38,6 +41,9 @@
 }
 
 /* content */
+
+.container {
+}
 
 .container .contWrap01 .h3Wrap h3::after {
   content: '';
@@ -76,13 +82,18 @@ ul {
   box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.3);
 }
 .card img {
-  width: 100%;
+  /* width: 100%; */
   transition: 0.3s;
 }
 .card .card-body {
   padding: 16px;
 }
 
+.contWrap03 {
+  width: 1216px;
+  height: 462px;
+  margin-bottom: 200px;
+}
 .contWrap03 .txtbox {
   width: 1114px;
   height: 338px;
@@ -98,4 +109,8 @@ ul {
   right: -520px;
 }
 
+.noticeWrap {
+  height: 600px;
+  background-color: #f7f8f9;
+}
 /* footer */
