@@ -70,10 +70,10 @@
   margin-bottom: 20px;
 }
 .visual .btnWrap {
-  position: absolute;
+  position: relative;
   z-index: 999;
-  left: 500px;
-  top: 830px;
+  top: -340px;
+  left: 340px;
 }
 /* content */
 
