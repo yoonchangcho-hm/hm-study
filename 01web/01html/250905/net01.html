@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="header">
@@ -24,13 +28,53 @@
       </div>
     </div>
     <div class="visual">
-      <div class="container">
-        <h2 class="title">게임아카데미</h2>
-        <h2 class="sub">미래의 꿈 게임에 담다</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- slide1 -->
+          <div class="swiper-slide slide bgimg1">
+            <div class="textWrap">
+              <h2 class="title">게임소통학교</h2>
+              <h2 class="sub">게임으로 소통하고 게임으로 가까워지는 가족</h2>
+            </div>
+          </div>
+          <!-- slide2 -->
+          <div class="swiper-slide slide bgimg2">
+            <div class="textWrap">
+              <h2 class="title">전국 장애학생<br />e페스티벌</h2>
+              <h2 class="sub">게임 안에서 하나 되는 모두의 축제</h2>
+            </div>
+          </div>
+          <!-- slide3 -->
+          <div class="swiper-slide slide bgimg3">
+            <div class="textWrap">
+              <h2 class="title">견학프로그램</h2>
+              <h2 class="sub">나의 게임 산업 탐방기</h2>
+            </div>
+          </div>
+          <!-- slide4 -->
+          <div class="swiper-slide slide bgimg4">
+            <div class="textWrap">
+              <h2 class="title">게임아카데미</h2>
+              <h2 class="sub">미래의 꿈 게임에 담다</h2>
+            </div>
+          </div>
+          <!-- slide5 -->
+          <div class="swiper-slide slide bgimg5">
+            <div class="textWrap">
+              <h2 class="title">어꺠동무문고</h2>
+              <h2 class="sub">다름을 이해하는 모두의 동화</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="btnWrap">
+        <span class="viewFra"> 번호 </span>
+        <button class="prevBtn">prev</button>
+        <button class="nextBtn">next</button>
       </div>
     </div>
+    </div>
     <div>
-      `
       <div class="container">
         <div class="contWrap01">
           <div class="h3Wrap">
@@ -95,6 +139,22 @@
           <div class="card"></div>
         </div>
       </div>
-    </div>
+    
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      //   var swiper = //
+      new Swiper('.mySwiper', {
+        loop: true,
+        navigation: {
+          nextEl: '.nextBtn',
+          prevEl: '.prevBtn',
+        },
+        pagination: {
+          el: '.viewFra',
+          type: 'fraction',
+        },
+      });
+    </script>
   </body>
 </html>

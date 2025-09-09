@@ -4,7 +4,8 @@
   background: white;
   position: fixed;
   width: 100%;
-  padding-left: 50px;
+  padding-left: 20px;
+  z-index: 999;
 }
 .header .wrap {
   /* background: skyblue; */
@@ -28,18 +29,52 @@
 /* visual */
 
 .visual {
-  /* background-color: pink; */
   height: 100vh;
-  min-height: 700px;
-  background-image: url(../img/img01_01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  color: white;
+}
+.visual .swiper {
+  width: 100%;
+  height: 100%;
 }
 
+.visual .swiper .slide {
+  display: flex;
+  align-items: center;
+  /* color: white; */
+  justify-content: center;
+  /* background-color: pink; */
+  /* background-image: url(../img/img01_01.jpg); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.visual .swiper .slide.bgimg1 {
+  background-image: url(../img/img01_01.jpg);
+}
+.visual .swiper .slide.bgimg2 {
+  background-image: url(../img/img01_02.jpg);
+}
+.visual .swiper .slide.bgimg3 {
+  background-image: url(../img/img01_03.jpg);
+}
+.visual .swiper .slide.bgimg4 {
+  background-image: url(../img/img01_04.jpg);
+}
+.visual .swiper .slide.bgimg5 {
+  background-image: url(../img/img01_05.jpg);
+}
+.visual .swiper .textWrap {
+  width: 1280px;
+  color: white;
+}
+.visual .swiper .textWrap .sub {
+  margin-bottom: 20px;
+}
+.visual .btnWrap {
+  position: absolute;
+  z-index: 999;
+  left: 500px;
+  top: 830px;
+}
 /* content */
 
 .container {
