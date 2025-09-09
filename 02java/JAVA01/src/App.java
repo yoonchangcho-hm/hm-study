@@ -26,7 +26,7 @@ public class App {
         System.out.println((int)myChar);
 
         char myChar1 = (char)42;
-        System.out.println(myChar)
+        System.out.println(myChar);
   
 
     }

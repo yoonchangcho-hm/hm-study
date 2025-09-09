@@ -7,7 +7,7 @@ public class Scanner01 {
     public static void main(String[] args) {
         
         Scanner scan = new Scanner(System.in);  
-        System.out.println("문자열을 입력하세요");scan6
+        System.out.println("문자열을 입력하세요");
         
         // String strInput = scan.nextLine();
         // String strInput1 = scan.nextLine();
